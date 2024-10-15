@@ -173,3 +173,5 @@ Please note that PWM is quite an outdated way of sending signals- it's acceptabl
 Hopefully you enjoyed our intro session and have had a chance to network with your new teammates! Next week our session will be on CAD- increasingly, requirements of rapid prototyping is taken as a given for prospective engineering jobs. Knowing how to take designs from Fusion 360 and use a range of machinery to best create a suitable part is an invaluable skill to employers, and there's no better place to learn than the SoE makerspace. Join us next week to get started!
 
 Also, make sure to sign up for PPMS and hand tool training. If your whole team can show that they have these sorted, you'll receive a BIG SERVO. When I run out of BIG SERVOs, there will be no more- so get trained fast, and crush your enemies with a BIG SERVO.
+
+[PPMS signup here](https://github.com/UBRoboticsWorkshop/Sumobots/blob/main/Week%201-%20Actuators/PPMS%20Instructions.pdf)
