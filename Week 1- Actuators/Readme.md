@@ -141,6 +141,8 @@ And set up your function generator like this:
 
 Make sure the underlined values are the same.
 
+If you want to understand how the MX1508 works, you can read more [here](https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/blob/main/1-Actuators/Detail%3A%20MOSFETs%20and%20Power.md).
+
 ## Step 4: Looking inside the wires with an oscilloscope, or something to that effect
 The main display panel is for the digital oscilloscope, which shows voltage over time. You can use this to see how the voltage flowing through the wires changes over time, giving you an easy way to spot errors and see how the system works. Try probing the wire from the function generator as well as the wires going to the motor- is the voltage to the motors what you'd expect it to look like? 
 
