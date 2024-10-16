@@ -150,6 +150,7 @@ https://github.com/user-attachments/assets/85ef4985-5c84-4bd0-b07a-ec34389e4f43
 ## Step 5: PWM for signals 
 For driving the DC motor, we used PWM to quite directly switch the motor on and off. However, this is not the only use for PWM- it can also be used to transfer data, in this case by Modulating the Width of the Pulses between 1000uS and 2000uS. Servo motors time how long the pulse is on for, and then go to an angle proportional to the length of the pulse- 0 degrees, for 1000uS, 180 degrees for 2000uS, 90 degrees for 1500uS. Wire up the servo motor as shown in the following:
 
+#### Make sure that the function generator setup is the same as in the video! It needs to run at 50Hz
 
 https://github.com/user-attachments/assets/f81ff454-7507-4df9-a888-9be75c805a77
 
