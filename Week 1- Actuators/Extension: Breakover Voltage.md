@@ -9,7 +9,8 @@ This is always a good question to ask when designing a control system. PWM attem
 
 We can model a motor as follows:
 
-![image](https://github.com/user-attachments/assets/9faf72da-8372-49f2-bcb5-5cf2e84a6401)
+![image](https://github.com/user-attachments/assets/795b1196-38dd-423c-86ef-cca738ed22bd)
+
 
 A resistor, inductor and "back EMF" voltage supply wired up in series.
 
