@@ -6,7 +6,7 @@ Computer Aided Design (CAD) allows you to create 3D models, and then export file
 
 It's really common for applications to be delayed, sometimes even over a week. Don't leave it until the week before and end up wasting your designs! 
 
-[Trust me, I've seen many an intricate design reduced to hot melt glue and cardboard by a delayed training session. Make sure this is the robot you're shoving off the board, and not the robot you're driving.](https://github.com/user-attachments/assets/4b83dae6-65ea-4f87-a252-e4308637fbbe)
+[Trust me, I've seen many an intricate design reduced to hot melt glue and cardboard by a delayed training session. Make sure this is the robot you're shoving off the board, and not the robot you're driving.](https://github.com/UBRoboticsWorkshop/Sumobots/blob/main/2-CAD/WhatForgettingPPMSDoesToAMember.md)
 
 ---
 
@@ -18,7 +18,9 @@ You can download CAD models of all the components here. To use them, simply open
 
 ## 1. Save And Import 
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/b061d83e-8c32-4648-ac98-8f421a394825
+
+https://github.com/user-attachments/assets/639b02d2-5283-46aa-ad57-7f734216328b
+
 
 One of the most effective methods to create a robot frame is to make models of each component, then position them in your CAD software. This allows for easy construction of structure, using the models to generate interfaces. 
 
@@ -26,7 +28,9 @@ One of the most effective methods to create a robot frame is to make models of e
 
 ## 2. Position Parts 
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/97bebe43-a9bb-4df8-a728-e79ead1a39a0
+
+https://github.com/user-attachments/assets/3b1d4ad5-a41f-42a7-bfa0-d5953052794a
+
 
 Hide parts in order to make sure they don’t get in the way of what you’re working on by clicking the “eye” symbol. The isolate tool, found by right clicking a part, can hide everything except that part too.  
 
@@ -43,7 +47,7 @@ Finally, use the move tool to position the MG996R servo motor. Again, setting pi
 ## 3. Draw Base 
 
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/9bb56ff4-2c6b-4c89-bb6d-672482dcd047
+https://github.com/user-attachments/assets/23fefd9d-9b40-441e-9e7b-ec61fd4506a5
 
 
 Hide the motors, and look at the bottom of the robot. Use new sketch, and select “capture position”. This creates a sketch where components are visible in the positions you moved them to. The camera will move to be perpendicular to the sketch plane. 
@@ -63,7 +67,7 @@ As you’ve added dimensions and constraints, the lines have become black. This 
 ## 4. Extrude Base 
 
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/4fd70ceb-de2e-4660-b4e9-392c61f11091
+https://github.com/user-attachments/assets/aec9cec1-18d9-4a66-8277-cfbc73a2986c
 
 
 One of the most used tools to create a body from a sketch is the extrude tool. Select the base, but leave the bolt holes of the battery carrier unselected. Drag out the arrow to 6mm- Fusion adjusts increments based on zoom, so finer adjustments can be made by zooming in. Alternatively, type 6mm into the “distance” field. 
@@ -77,7 +81,7 @@ Finally, rotate the camera to ensure that the clearance between the base and the
 ## 5. Draw Motor Mount 
 
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/f1d0d11c-e017-473f-ac39-7609c4828a58
+https://github.com/user-attachments/assets/02d344b3-a7bf-45ae-952e-6c2b28ae56a7
 
 
 Create a new sketch, this time on the symmetry plane down the middle of the robot. Click the mounting face of the motor, and press P in order to project it onto the sketch plane. As with the base plate, create an L bracket and constrain it to fit the parts. This time, we’ll make use of the colinear constraint, which makes lines lock along the same axis. If a part gets in the way of the sketch, hide it with the browser. You can also make an existing object a construction line by selecting it, then hitting the construction icon. 
@@ -87,7 +91,7 @@ Create a new sketch, this time on the symmetry plane down the middle of the robo
 ## 6. Create Motor Mount 
 
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/c70d73ef-863f-414d-8fab-7d79d933d2ac
+https://github.com/user-attachments/assets/949330ef-d430-4ceb-9f19-bdbdcfdaedf4
 
 
 Now we’ll make a body from the motor mount. However, the projection lines complicate the extrude. Here, it’s easy to fix but in complex models it can be annoying. We’ll go back into the sketch to make these lines construction, so they won’t affect the extrude. 
@@ -105,7 +109,7 @@ We’ll now use the mirror tool to create a symmetric part, set to join in order
 ## 7. Draw Skid 
 
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/5bcb5695-6661-43e4-8b75-046ab7ce2389
+https://github.com/user-attachments/assets/7a36d591-be89-4525-9300-86a57ac64530
 
 
 Create a sketch on the baseplate. Draw a circle for the skid, and a plate around it before adding a construction line to distance it from the edge of the base. Add a second circle to work as a mounting hole, with a construction line to position it. Then use the mirror tool to create a second symmetric mounting hole. 
@@ -117,7 +121,7 @@ Make sure the construction lines are constrained as vertical or horizontal, and 
 ## 8. Create Skid 
 
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/89dd2e5b-9315-4919-9e1d-19aa06611056
+https://github.com/user-attachments/assets/0dcfb21b-2952-4a39-9129-8597b8d9225e
 
 
 Use an offset again, to draw on the bottom of the base. Set the extrude to “new body” to avoid fusing incorrectly. On the next extrude, we want the pin and plate to fuse but not the base- again, hide the base during this operation. Finally, we’ll use the fillet tool on the bottom of the skid, so that it won’t catch on the floor (as much). 
@@ -127,11 +131,10 @@ Use an offset again, to draw on the bottom of the base. Set the extrude to “ne
 ## 9. Servo Tabs 
 
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/4f095c24-293f-4daf-b062-c855b877bcfa
+https://github.com/user-attachments/assets/d40b921b-1298-4f98-8add-bed2dfb16a0e
 
 
-
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/0d398cac-541e-441e-ac93-8eabad2fddcb
+https://github.com/user-attachments/assets/c04225de-6162-4b9c-8af1-a8aaaf2137e7
 
 
 Project the relevant parts of the servo, and draw the outline of a mount. Faces, vertices and edges can all be projected by clicking them and pressing P. 
@@ -140,7 +143,9 @@ Project the relevant parts of the servo, and draw the outline of a mount. Faces,
 
 ## 10. Servo Mount 
 
-https://github.com/user-attachments/assets/c3a3545d-fd50-4642-8372-6946010a16b3
+
+https://github.com/user-attachments/assets/f9f3ec7d-113f-4399-91ac-bbe65dab8c2d
+
 
 Add some blocks with holes to mount the servo tabs, again centring the bolt holes with construction lines. 
 
@@ -157,7 +162,7 @@ Project and construct mounting holes to attach parts to the base using M3 bolts.
 ## 12. TimeTravel
 
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/23be0e64-f3bb-49fc-a562-dd14a9338b7d
+https://github.com/user-attachments/assets/5c08a4b6-1fe5-4cc2-8c11-aa181c6386e6
 
 
 Using Time Travel to Unmake Your Mistakes Before They Ever Happen 
@@ -181,7 +186,7 @@ What was this section about again? Anyway.
 ## 13. Tolerances 
 
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/efd23bce-f5c5-4434-a478-e60d8b6f4588
+https://github.com/user-attachments/assets/a7ab1835-38e9-42d5-9a15-f4f4c6fbe3ae
 
 
 So you’ve printed your part, but it’s not quite right- something doesn’t quite fit, a bolt is too loose or tight etc. While this can be fixed physically with a file or hacksaw or digitally by using the timeline, this can be quite complicated or cause issues in some designs. In these cases, go go gadget press pull. 
@@ -193,8 +198,7 @@ The press pull is a contextual tool that can modify tolerances by offsetting fac
 ## 14. Reinforcement 
 
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/788a035a-b662-4d9c-8d83-5efcbad6e125
-
+https://github.com/user-attachments/assets/29334cce-5f80-4e3f-8d77-d9a13b7fd026
 
 
 The motor mount is far too weak around the bolts (and in general). We can simply add another extrude to add a little extra material around the holes. 
@@ -204,9 +208,9 @@ The motor mount is far too weak around the bolts (and in general). We can simply
 ## 15.	How strong are my parts?
 
 ### 15A. Not very lol.
-  
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/a82118c4-61df-49d2-8141-a7bff7a15e37
+
+https://github.com/user-attachments/assets/4b7dc0df-5bf5-4b74-bd07-0ea5808da53d
 
 
 The design has a lot of sharp corners, which concentrate stress. These can combine with layer lines and part defects, causing parts to fail under very little loading. Careful consideration must be taken, especially with FDM 3D printing, to minimize this.
@@ -214,7 +218,7 @@ The design has a lot of sharp corners, which concentrate stress. These can combi
 ### 15B. But how weak are they?
 
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/7041bd64-1900-4bfc-b937-22a2c8febaf6
+https://github.com/user-attachments/assets/9724a752-f9d4-416e-8224-46e2aa02d700
 
 
 For students, you can use powerful cloud computing to simulate and generatively design components for free. Whilst a lot of this is far out of scope of this session, especially when it comes to calculating dynamic loading and behaviour of non-isometric materials, you can see here how to add loads and constraints to simulate the forces on the motor bracket.
@@ -240,7 +244,7 @@ Why create this complex structure? This part can be created in one operation usi
 ## 17. Fabrication - 3D printing
 
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/ed551442-318d-47de-8b1e-a04692fe7e87
+https://github.com/user-attachments/assets/96ae8f42-ba89-4cf4-971f-56c132441ed4
 
 
 To use the printers in the makerspace, you’ll need a PPMS account and also an STL of the part.
@@ -248,9 +252,9 @@ To use the printers in the makerspace, you’ll need a PPMS account and also an 
 You can also see the process of loading it into Cura and getting it ready to print. When you get your printer training by booking through PPMS, we’ll go over this in greater depth.
 
 ### 17A.	Fabrication- Install shaper Utilities
-  
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/8dc738ed-42f9-42fa-b125-5820df0383f7
+
+https://github.com/user-attachments/assets/10396867-1b24-453f-8858-340aa456ac66
 
 
 To use the laser cutter, you’ll need an SVG file. Fusion doesn’t have a great way to export these, and the export SVG plugin is paid for. To get around this, we’ll use a plug in for the Shaper routing tool. 
@@ -259,7 +263,7 @@ Under the utilities tab, select the Fusion app store under add ins. Search Shape
 ### 17B.	Fabrication- Laser Cutting (Using Shaper)
 
 
-https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/1e5f3faf-af46-41b9-b2a1-b20e8f360e1c
+https://github.com/user-attachments/assets/bf0e4c1e-d095-4fd5-b159-40f73db0ac7d
 
 
 You should now have a triangular icon available under “Make”. Select the face you want to cut, and hit OK to make an SVG. You can view this file by opening it- the laser cutter will cut along the edges seen in the file. Only flat stuff, and no pocketing on the laser cutter. I tried to pocket on a laser cutter once, and the Mechanical Engineers laughed at me.
