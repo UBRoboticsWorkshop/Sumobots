@@ -2,13 +2,15 @@
 ## Layout 
 An H-bridge is a device built out of four transistors that allows for electricity to run in either direction through a load:
 
-![image](https://github.com/user-attachments/assets/8ffd9993-a926-4453-9a99-041da4e5e048)
+![image](https://github.com/user-attachments/assets/b2321abe-0277-472d-985c-0641899fcdf0)
+
 
 ## MOSFETs
 
 Q1,2,3,4 are MOSFETs, a type of transistor that works as an electrical switch.
 
-![image](https://github.com/user-attachments/assets/4598c452-7e38-4f1c-9186-b73e920561c1)
+![image](https://github.com/user-attachments/assets/adcd7165-bc18-4b9a-877e-adea40c7439d)
+
 
 When we apply a voltage to the gate pin, the MOSFET will conduct between the drain and source pin- just like connecting the two wires together. This means we can use a low voltage, low current signal to turn on and off a powerful device like a motor- which will be very important later on when we want to use a microcontroller to turn the motors on an off.
 
@@ -17,12 +19,13 @@ Our sumobot controllers can only supply about 40mA of current, while these motor
 ## How This Helps Your Sumobot Run Away
 There's no shame in a tactical retreat, and in Sumobots it's likely you may find yourself wanting to do this. By applying voltage to the pins labeled INA, current will flow as shown:
 
-![image](https://github.com/user-attachments/assets/28527906-82d6-450b-b91a-11719a856d0f)
+![image](https://github.com/user-attachments/assets/986336cd-2f45-4e02-87b7-ff89aaf22a28)
+
 
 
 However, by applying voltage to INB, the current will flow in the opposite direction:
 
-![image](https://github.com/user-attachments/assets/0a828cc7-05d2-4014-b715-23981d1c7e6c)
+![image](https://github.com/user-attachments/assets/049bdd72-847d-4923-8df6-d4369cc52bbc)
 
 This will allow you to run your motor either forwards or backwards.
 
