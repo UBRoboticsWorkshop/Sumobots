@@ -6,7 +6,7 @@ Computer Aided Design (CAD) allows you to create 3D models, and then export file
 
 It's really common for applications to be delayed, sometimes even over a week. Don't leave it until the week before and end up wasting your designs! 
 
-[Trust me, I've seen many an intricate design reduced to hot melt glue and cardboard by a delayed training session. Make sure this is the robot you're shoving off the board, and not the robot you're driving.](https://github.com/UBRoboticsWorkshop/Sumobots/blob/main/2-CAD/WhatForgettingPPMSDoesToAMember.md)
+[Trust me, I've seen many an intricate design reduced to hot melt glue and cardboard by a delayed training session. Make sure this is the robot you're shoving off the board, and not the robot you're driving.](https://github.com/UBRoboticsWorkshop/Sumobots/blob/main/Week%202-%20CAD/WhatForgettingPPMSDoesToAMember.md)
 
 ---
 
