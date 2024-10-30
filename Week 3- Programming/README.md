@@ -11,6 +11,9 @@ This year, we're using our brand-new Sumocontroller, which features an updated v
 
 We've even given you a super bright RGB LED, so you can choose to set it either to our patent pending UBRobotics blue (0x20, 0xe7, 0xf0) or off (0x00, 0x00, 0x00).
 
+![IMG_3250](https://github.com/user-attachments/assets/b4f6f4e1-6ae4-431e-b409-10a917c995d7)
+
+
 ## The Arduino IDE
 The ESP32 can be programmed in various IDEs, but the easiest to get started in is the Arduino IDE 2.0. You can download it [here](https://www.arduino.cc/en/software), or if you're working on a university computer you'll have it pre-installed. Next, you'll need to add the board information for the ESP32:
 1. Go to the file drop down, and click preferences
@@ -145,6 +148,8 @@ The ESP32 can provide about 40mA per pin at 3v3. There are two problems with thi
 These can be fixed by using PWM and an H-Bridge. You should already have seen this in our first workshop, so we'll show you how to use PWM with a microcontroller.
 
 Connect pin 10 to in1, and pin 11 to in2. Wire plus and minus on the motor driver to the positive and negative rails respectively, and connect the rails up to the VirtualBench power supply. Lastly, connect the motor to the two pins marked motorA.
+
+#### Remember to use +6V to connect to the board!
 
 ![image](https://github.com/user-attachments/assets/cff28fab-bc36-44bf-b572-24196fd38c08)
 
