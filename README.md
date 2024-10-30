@@ -26,9 +26,9 @@ We'll also be allowing you to use our lab in the weeks leading up to comp... but
 
 •	You can use your own components, but no dangerous parts- if in doubt, ask committee
 
-o	Examples of dangerous parts would include spinners, blades, heated parts
+  o	Examples of dangerous parts would include spinners, blades, heated parts
 
-o	The focus of your system should be controlling your opponent’s motion, however some robots may break during matches
+  o	The focus of your system should be controlling your opponent’s motion, however some robots may break during matches
 
 ## Arena/Goals
 
