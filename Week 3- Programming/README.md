@@ -15,7 +15,8 @@ We've even given you a super bright RGB LED, so you can choose to set it either 
 The ESP32 can be programmed in various IDEs, but the easiest to get started in is the Arduino IDE 2.0. You can download it [here](https://www.arduino.cc/en/software), or if you're working on a university computer you'll have it pre-installed. Next, you'll need to add the board information for the ESP32:
 1. Go to the file drop down, and click preferences
 
-![image](https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/e08e2c12-951e-49e6-9c64-596144b5a265)
+![image](https://github.com/user-attachments/assets/5393b6ac-9a80-4f30-8dd6-5c5f65c47ce4)
+
 
 2. At the bottom of the page, paste this into the Additional Board Manager URLs field
 
@@ -23,12 +24,11 @@ The ESP32 can be programmed in various IDEs, but the easiest to get started in i
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 ```
 
-![image](https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/99a556df-9207-42d3-a676-b98a90f7d335)
+![image](https://github.com/user-attachments/assets/3a5da960-709a-4127-8f7c-3d939aef405a)
 
 3. Open the boards manager tab, highlighted here, and install ESP32. You may need to use the search bar to find it quickly.
 
-![image](https://github.com/user-attachments/assets/966c3738-9428-4507-8e05-1244f9f49cab)
-
+![image](https://github.com/user-attachments/assets/f88dcf46-16d6-489b-90b2-e6ac5a24b617)
 
 ## Step 1: Connect the ESP32
 The ESP32 uses USB-C to connect to your computer's USB ports, and there should be a chime when you plug it in. The ESP32 will at first be in an invalid state and will keep disconnecting and reconnecting from your computer. The following should get it working:
@@ -49,7 +49,7 @@ There are a few other things that may cause issues here. Here are some possible 
 
 ## Step 2: The first program
 Make sure the box in the top left reads:
-![image](https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/f81761e2-3015-426a-9b59-bc6f5c300c8e)
+![image](https://github.com/user-attachments/assets/20f59edd-34bb-446c-8862-15929d3fdb05)
 
 If it doesn't, click select other board and port. Search for ESP32S3 dev module, and set your port to that.
 Delete all the code in the editor, and paste this in:
@@ -66,7 +66,7 @@ void loop() {
 }
 ```
 
-If all is working, you should have the ESP32 printing "Hi" repeatedly, which you can read by clicking the ![image](https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/009889f6-0904-4da0-941a-d0396ef5264c) Serial Monitor button in the top left corner.
+If all is working, you should have the ESP32 printing "Hi" repeatedly, which you can read by clicking the ![image](https://github.com/user-attachments/assets/e63125fa-ee49-4445-85c4-7b7f921f98fe) Serial Monitor button in the top left corner.
 
 
 <details> <summary> Not printing anything?
@@ -75,7 +75,7 @@ If all is working, you should have the ESP32 printing "Hi" repeatedly, which you
 
 Make sure that the settings under tools are as follows:
 
-![image](https://github.com/UBRoboticsWorkshop/Sumobots-2024-25/assets/20403882/acaac6a7-3e7d-4596-b762-2d82f30a8fc3)
+![image](https://github.com/user-attachments/assets/bb5acea3-e6d0-4730-8dc3-f9183cb34db7)
 
 Most importantly, "USB CDC on boot" needs to be enabled.
 </details>
@@ -146,7 +146,7 @@ These can be fixed by using PWM and an H-Bridge. You should already have seen th
 
 Connect pin 10 to in1, and pin 11 to in2. Wire plus and minus on the motor driver to the positive and negative rails respectively, and connect the rails up to the VirtualBench power supply. Lastly, connect the motor to the two pins marked motorA.
 
-![WhatsApp Image 2024-10-29 at 17 24 35_5fef8acb](https://github.com/user-attachments/assets/75dc059c-4f23-499e-a4c7-4f340cf17bb0)
+![image](https://github.com/user-attachments/assets/cff28fab-bc36-44bf-b572-24196fd38c08)
 
 ## Step 5: Making a Motor Move
 ```cpp
@@ -185,7 +185,7 @@ Connect Vin and GND on the Sumocontroller to the positive and ground rails respe
 
 Lastly, connect the positive and negative rail to the VirtualBench power supply (red and black wires going off-camera in the photo below).
 
-![ServoConnection](https://github.com/user-attachments/assets/0fdf5b09-d784-487a-8b3a-40a0554ce188)
+![image](https://github.com/user-attachments/assets/a644199d-735a-4363-970e-002eaa629649)
 
 The code below should make the servo move between two positions:
 ## Step 6: Making the Servo Move
