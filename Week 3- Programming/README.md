@@ -175,7 +175,7 @@ void loop() {
 
 You'll probably notice that the motor doesn't spin at values such as 100, 200. This is because we aren't controlling speed directly, we're controlling average voltage across the motor. Every motor has a "breakover voltage", or minimum voltage to start spinning. Try changing the resolution and frequency- which of these has an effect on how finely you can control the motor? remember that when you change the resolution, the max value of a channel will change- here 2^10 = 1024 is fully on, while a resolution of 8 would have 2^8 = 255 as fully on.
 
-Try probing both the pin 14 on the ESP32, and the motor's terminals- you can use this to make sure both that the ESP32 is generating the correct signal, and that the H-Bridge is properly driving the motor.
+Try probing both the pin 10 on the ESP32, and the motor's terminals- you can use this to make sure both that the ESP32 is generating the correct signal, and that the H-Bridge is properly driving the motor.
 
 In semester 2, we'll be looking at much more advanced types of motor- these can provide measurements of their own speed, allowing us to command them to run at an exact speed.
 
