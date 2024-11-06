@@ -11,6 +11,9 @@ This year, we're using our brand-new Sumocontroller, which features an updated v
 
 We've even given you a super bright RGB LED, so you can choose to set it either to our patent pending UBRobotics blue (0x20, 0xe7, 0xf0) or off (0x00, 0x00, 0x00).
 
+![IMG_3250](https://github.com/user-attachments/assets/b4f6f4e1-6ae4-431e-b409-10a917c995d7)
+
+
 ## The Arduino IDE
 The ESP32 can be programmed in various IDEs, but the easiest to get started in is the Arduino IDE 2.0. You can download it [here](https://www.arduino.cc/en/software), or if you're working on a university computer you'll have it pre-installed. Next, you'll need to add the board information for the ESP32:
 1. Go to the file drop down, and click preferences
@@ -146,6 +149,8 @@ These can be fixed by using PWM and an H-Bridge. You should already have seen th
 
 Connect pin 10 to in1, and pin 11 to in2. Wire plus and minus on the motor driver to the positive and negative rails respectively, and connect the rails up to the VirtualBench power supply. Lastly, connect the motor to the two pins marked motorA.
 
+#### Remember to use +6V to connect to the board!
+
 ![image](https://github.com/user-attachments/assets/cff28fab-bc36-44bf-b572-24196fd38c08)
 
 ## Step 5: Making a Motor Move
@@ -170,7 +175,7 @@ void loop() {
 
 You'll probably notice that the motor doesn't spin at values such as 100, 200. This is because we aren't controlling speed directly, we're controlling average voltage across the motor. Every motor has a "breakover voltage", or minimum voltage to start spinning. Try changing the resolution and frequency- which of these has an effect on how finely you can control the motor? remember that when you change the resolution, the max value of a channel will change- here 2^10 = 1024 is fully on, while a resolution of 8 would have 2^8 = 255 as fully on.
 
-Try probing both the pin 14 on the ESP32, and the motor's terminals- you can use this to make sure both that the ESP32 is generating the correct signal, and that the H-Bridge is properly driving the motor.
+Try probing both the pin 10 on the ESP32, and the motor's terminals- you can use this to make sure both that the ESP32 is generating the correct signal, and that the H-Bridge is properly driving the motor.
 
 In semester 2, we'll be looking at much more advanced types of motor- these can provide measurements of their own speed, allowing us to command them to run at an exact speed.
 
